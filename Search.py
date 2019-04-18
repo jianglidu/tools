@@ -5,6 +5,7 @@ import re
 import sys
 from collections import Counter
 def search(tag1, tag2):
+    #SEARCH WHAT YOU INPUT in multiple files
     variant = list()
     base = r'/web_share/Project_2019/21plus/210samples'
     outfile = open(r'/home/jiangli/tmp/21plus/searching_res.txt', 'w')
@@ -20,6 +21,8 @@ def search(tag1, tag2):
                             outfile.write(filename+'\t'+line)
                             count += 1
     print(count)
-tag1 = 'NTRK3'
-tag2 = '88137424'
+
+
+tag1 = 'NTRK3'    #检索词1
+tag2 = '88137424'  #检索词2
 search(tag1, tag2)
